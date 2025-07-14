@@ -30,6 +30,7 @@ This application connects to your Google Calendar and provides real-time synchro
 - Persistent authentication via HTTP-only cookies
 
 ## Architecture
+<img width="4063" height="1563" alt="image" src="https://github.com/user-attachments/assets/0716613a-95a9-4087-b529-ece2e2a0e1d0" />
 
 ## Technical Decisions Made
 
