@@ -8,10 +8,9 @@ This application connects to your Google Calendar and provides real-time synchro
 
 ## Key Features
 
-### 1. **Real-Time  Notifications**
+### 1. **Real-Time  Changes**
 
 - Live updates when events are created, updated, or deleted
-- No page refresh required for event changes
 
 ### 2. **Google Calendar Integration with Webhooks**
 
@@ -39,18 +38,18 @@ https://github.com/user-attachments/assets/0ec71ae4-2442-46fb-bd69-606eceabdef1
 - Tokens are stored securely in Redis (Upstash) and are mapped using the user's email address.
 - A secure, HTTP-only cookie stores the email on the frontend for persistent identification without exposing sensitive information.
 
-### **Multi-User Architecture**
+### Calender Sync Mechanism**
 
 - Implemented Google Calendar Webhooks via the `watch()` API to detect changes in real-time.
 - Backend listens to calendar change notifications via webhook route and it will sync the calender using syncToken.
 
 ### **Event Change Detection**
 
-- Here iI have used Google’s incremental sync (syncToken) to fetch only changed events, reducing API calls.
-- After the new changes are received from the google calender using `synctoen` we update those changes in the redis and display in the UI within 3-4 sec
+- Here I have used Google’s incremental sync (syncToken) to fetch only changed events, reducing API calls.
+- After the new changes are received from the google calender using `synctoken` we update those changes in the redis and display in the UI within 3-4 sec
 
 ### **Frontend Sync & Polling**
-- Frontend polls /events periodically like every 3-4 sec to get the latest data from the redis and reflect in the ui
+- Frontend polls /events periodically like every 5 sec to get the latest data from the redis and reflect in the ui
 
 
 
