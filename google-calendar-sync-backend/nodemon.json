@@ -1,0 +1,5 @@
+{
+  "watch": ["src"],
+  "ignore": ["syncTokens.json", "tokens.json"],
+  "ext": "ts,js,json"
+}
