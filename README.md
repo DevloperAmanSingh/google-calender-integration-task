@@ -8,29 +8,28 @@ This application connects to your Google Calendar and provides real-time synchro
 
 ## Key Features
 
-### 1. **Real-Time Event Notifications**
+### 1. **Real-Time  Notifications**
 
-- **Server-Sent Events (SSE)** stream for instant notifications
 - Live updates when events are created, updated, or deleted
-- Smart reconnection with exponential backoff
 - No page refresh required for event changes
 
 ### 2. **Google Calendar Integration with Webhooks**
 
 - Full Google OAuth2 authentication flow
 - Google Calendar API integration with webhook subscriptions
-- Automatic sync token management for efficient incremental updates
-- Multi-user support with email-based token separation
+- Automatic sync token management for efficient  updates
 
-### 3. **Smart Polling with Background Updates**
+### 3. **Smart Polling **
 
 - Automatic event fetching every 5 seconds
 - Background updates without loading indicators
-- Manual sync capability with user feedback
-- Persistent authentication via HTTP-only cookies
 
 ## Architecture
 <img width="4063" height="1563" alt="image" src="https://github.com/user-attachments/assets/0716613a-95a9-4087-b529-ece2e2a0e1d0" />
+
+## Video Demo 
+
+https://github.com/user-attachments/assets/0ec71ae4-2442-46fb-bd69-606eceabdef1
 
 ## Technical Decisions Made
 
