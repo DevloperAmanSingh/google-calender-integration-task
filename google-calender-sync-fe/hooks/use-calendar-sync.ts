@@ -131,7 +131,7 @@ export function useCalendarSync() {
   // Placeholder for Google OAuth flow
   const signIn = async () => {
     setLoading(true);
-    window.location.href = "/api/auth";
+    window.location.href = "http://localhost:3000/auth/google";
   };
 
   // Clean up polling on unmount
